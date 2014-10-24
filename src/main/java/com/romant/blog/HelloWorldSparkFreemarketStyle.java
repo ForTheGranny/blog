@@ -28,7 +28,7 @@ public class HelloWorldSparkFreemarketStyle {
         get("/hello", (request, response) -> {
             StringWriter strWriter = new StringWriter();
             try {
-                //Template helloTemplate = configuration.getTemplate("helloworld.html");
+                Template helloTemplate = configuration.getTemplate("helloworld.html");
                 Map<String, Object> helloMap = new HashMap<>();
                 helloMap.put("name", "Roman");
                 helloMap.put("title", "HelloWorld");
